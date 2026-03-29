@@ -1,0 +1,212 @@
+<div style="width:1280px;height:720px;background:#0f1117;font-family:Arial,sans-serif;overflow:hidden;position:relative;">
+
+<div style="background:#1a1d27;padding:14px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2d3148;">
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div style="width:28px;height:28px;background:#7f77dd;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:14px;color:#fff;font-weight:500;">S</div>
+    <span style="color:#e8eaf0;font-size:16px;font-weight:500;">Amazon Reviews — Sentiment Analysis: VADER vs RoBERTa</span>
+  </div>
+  <span style="color:#888;font-size:12px;">500 reviews analyzed · Hugging Face · NLTK</span>
+</div>
+
+<div style="padding:18px 24px;display:grid;grid-template-columns:1fr 1fr;gap:14px;height:calc(720px - 52px);box-sizing:border-box;">
+
+  <div style="display:flex;flex-direction:column;gap:14px;">
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+      <div style="background:#1e2235;border-radius:8px;padding:12px 14px;">
+        <div style="color:#888;font-size:10px;margin-bottom:4px;">Reviews</div>
+        <div style="color:#e8eaf0;font-size:22px;font-weight:500;">500</div>
+        <div style="color:#1d9e75;font-size:10px;">Amazon Food</div>
+      </div>
+      <div style="background:#1e2235;border-radius:8px;padding:12px 14px;">
+        <div style="color:#888;font-size:10px;margin-bottom:4px;">Models</div>
+        <div style="color:#e8eaf0;font-size:22px;font-weight:500;">2</div>
+        <div style="color:#7f77dd;font-size:10px;">VADER + RoBERTa</div>
+      </div>
+      <div style="background:#1e2235;border-radius:8px;padding:12px 14px;">
+        <div style="color:#888;font-size:10px;margin-bottom:4px;">Classes</div>
+        <div style="color:#e8eaf0;font-size:22px;font-weight:500;">3</div>
+        <div style="color:#ef9f27;font-size:10px;">Pos · Neu · Neg</div>
+      </div>
+    </div>
+
+    <div style="background:#1e2235;border-radius:8px;padding:14px 16px;flex:1;">
+      <div style="color:#bbb;font-size:12px;font-weight:500;margin-bottom:14px;">Compound Score by Star Rating (VADER)</div>
+      <div style="display:flex;align-items:flex-end;gap:10px;height:120px;padding:0 8px;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;">
+          <div style="background:#e24b4a;width:100%;border-radius:4px 4px 0 0;" style="height:30px;"></div>
+          <div style="width:100%;background:#e24b4a;border-radius:4px 4px 0 0;height:30px;"></div>
+          <span style="color:#888;font-size:10px;">★1</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;">
+          <div style="width:100%;background:#ef9f27;border-radius:4px 4px 0 0;height:50px;"></div>
+          <span style="color:#888;font-size:10px;">★2</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;">
+          <div style="width:100%;background:#fac775;border-radius:4px 4px 0 0;height:70px;"></div>
+          <span style="color:#888;font-size:10px;">★3</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;">
+          <div style="width:100%;background:#97c459;border-radius:4px 4px 0 0;height:90px;"></div>
+          <span style="color:#888;font-size:10px;">★4</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;">
+          <div style="width:100%;background:#1d9e75;border-radius:4px 4px 0 0;height:115px;"></div>
+          <span style="color:#888;font-size:10px;">★5</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#1e2235;border-radius:8px;padding:14px 16px;">
+      <div style="color:#bbb;font-size:12px;font-weight:500;margin-bottom:10px;">Transformers Pipeline — Sample Predictions</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#131620;border-radius:6px;padding:7px 10px;">
+          <span style="color:#aaa;font-size:11px;">"I love sentiment analysis!"</span>
+          <span style="background:#0f6e56;color:#9fe1cb;font-size:10px;padding:2px 8px;border-radius:4px;">POSITIVE 99%</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#131620;border-radius:6px;padding:7px 10px;">
+          <span style="color:#aaa;font-size:11px;">"booo"</span>
+          <span style="background:#791f1f;color:#f7c1c1;font-size:10px;padding:2px 8px;border-radius:4px;">NEGATIVE 97%</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;background:#131620;border-radius:6px;padding:7px 10px;">
+          <span style="color:#aaa;font-size:11px;">"Make sure to like and subscribe!"</span>
+          <span style="background:#185fa5;color:#b5d4f4;font-size:10px;padding:2px 8px;border-radius:4px;">POSITIVE 91%</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:14px;">
+
+    <div style="background:#1e2235;border-radius:8px;padding:14px 16px;">
+      <div style="color:#bbb;font-size:12px;font-weight:500;margin-bottom:12px;">VADER vs RoBERTa — Score Comparison</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div>
+          <div style="color:#888;font-size:10px;margin-bottom:6px;">VADER</div>
+          <div style="display:flex;flex-direction:column;gap:5px;">
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="color:#999;font-size:10px;width:30px;">Pos</span>
+              <div style="flex:1;background:#2d3148;border-radius:3px;height:12px;"><div style="background:#1d9e75;width:72%;height:100%;border-radius:3px;"></div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="color:#999;font-size:10px;width:30px;">Neu</span>
+              <div style="flex:1;background:#2d3148;border-radius:3px;height:12px;"><div style="background:#888780;width:55%;height:100%;border-radius:3px;"></div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="color:#999;font-size:10px;width:30px;">Neg</span>
+              <div style="flex:1;background:#2d3148;border-radius:3px;height:12px;"><div style="background:#e24b4a;width:28%;height:100%;border-radius:3px;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="color:#888;font-size:10px;margin-bottom:6px;">RoBERTa</div>
+          <div style="display:flex;flex-direction:column;gap:5px;">
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="color:#999;font-size:10px;width:30px;">Pos</span>
+              <div style="flex:1;background:#2d3148;border-radius:3px;height:12px;"><div style="background:#1d9e75;width:80%;height:100%;border-radius:3px;"></div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="color:#999;font-size:10px;width:30px;">Neu</span>
+              <div style="flex:1;background:#2d3148;border-radius:3px;height:12px;"><div style="background:#888780;width:48%;height:100%;border-radius:3px;"></div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;">
+              <span style="color:#999;font-size:10px;width:30px;">Neg</span>
+              <div style="flex:1;background:#2d3148;border-radius:3px;height:12px;"><div style="background:#e24b4a;width:22%;height:100%;border-radius:3px;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#1e2235;border-radius:8px;padding:14px 16px;flex:1;">
+      <div style="color:#bbb;font-size:12px;font-weight:500;margin-bottom:12px;">Pair Plot — Model Correlation by Star Rating</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;">
+        <div style="background:#131620;border-radius:4px;height:70px;display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="55" viewBox="0 0 60 55">
+            <circle cx="10" cy="45" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="15" cy="40" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="22" cy="30" r="2.5" fill="#ef9f27" opacity="0.7"/>
+            <circle cx="30" cy="20" r="2.5" fill="#fac775" opacity="0.7"/>
+            <circle cx="40" cy="12" r="2.5" fill="#97c459" opacity="0.7"/>
+            <circle cx="50" cy="5" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <text x="0" y="55" fill="#555" font-size="7">vader_pos</text>
+          </svg>
+        </div>
+        <div style="background:#131620;border-radius:4px;height:70px;display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="55" viewBox="0 0 60 55">
+            <circle cx="12" cy="42" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="18" cy="38" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="25" cy="28" r="2.5" fill="#ef9f27" opacity="0.7"/>
+            <circle cx="33" cy="18" r="2.5" fill="#fac775" opacity="0.7"/>
+            <circle cx="42" cy="10" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <circle cx="50" cy="4" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <text x="0" y="55" fill="#555" font-size="7">roberta_pos</text>
+          </svg>
+        </div>
+        <div style="background:#131620;border-radius:4px;height:70px;display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="55" viewBox="0 0 60 55">
+            <circle cx="48" cy="5" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="40" cy="12" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="30" cy="25" r="2.5" fill="#ef9f27" opacity="0.7"/>
+            <circle cx="20" cy="35" r="2.5" fill="#fac775" opacity="0.7"/>
+            <circle cx="12" cy="44" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <text x="0" y="55" fill="#555" font-size="7">vader_neg</text>
+          </svg>
+        </div>
+        <div style="background:#131620;border-radius:4px;height:70px;display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="55" viewBox="0 0 60 55">
+            <circle cx="50" cy="4" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="42" cy="10" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="32" cy="22" r="2.5" fill="#ef9f27" opacity="0.7"/>
+            <circle cx="22" cy="33" r="2.5" fill="#fac775" opacity="0.7"/>
+            <circle cx="13" cy="43" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <text x="0" y="55" fill="#555" font-size="7">roberta_neg</text>
+          </svg>
+        </div>
+        <div style="background:#131620;border-radius:4px;height:70px;display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="55" viewBox="0 0 60 55">
+            <circle cx="20" cy="20" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="30" cy="25" r="2.5" fill="#ef9f27" opacity="0.7"/>
+            <circle cx="25" cy="30" r="2.5" fill="#fac775" opacity="0.7"/>
+            <circle cx="35" cy="22" r="2.5" fill="#97c459" opacity="0.7"/>
+            <circle cx="40" cy="28" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <text x="0" y="55" fill="#555" font-size="7">vader_neu</text>
+          </svg>
+        </div>
+        <div style="background:#131620;border-radius:4px;height:70px;display:flex;align-items:center;justify-content:center;">
+          <svg width="60" height="55" viewBox="0 0 60 55">
+            <circle cx="22" cy="22" r="2.5" fill="#e24b4a" opacity="0.7"/>
+            <circle cx="32" cy="26" r="2.5" fill="#ef9f27" opacity="0.7"/>
+            <circle cx="27" cy="32" r="2.5" fill="#fac775" opacity="0.7"/>
+            <circle cx="37" cy="20" r="2.5" fill="#97c459" opacity="0.7"/>
+            <circle cx="42" cy="30" r="2.5" fill="#1d9e75" opacity="0.7"/>
+            <text x="0" y="55" fill="#555" font-size="7">roberta_neu</text>
+          </svg>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:4px;"><div style="width:8px;height:8px;border-radius:50%;background:#e24b4a;"></div><span style="color:#888;font-size:10px;">★1-2</span></div>
+        <div style="display:flex;align-items:center;gap:4px;"><div style="width:8px;height:8px;border-radius:50%;background:#ef9f27;"></div><span style="color:#888;font-size:10px;">★3</span></div>
+        <div style="display:flex;align-items:center;gap:4px;"><div style="width:8px;height:8px;border-radius:50%;background:#1d9e75;"></div><span style="color:#888;font-size:10px;">★4-5</span></div>
+      </div>
+    </div>
+
+    <div style="background:#1e2235;border-radius:8px;padding:12px 16px;">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <span style="background:#1a1f35;color:#b5d4f4;font-size:10px;padding:3px 8px;border-radius:4px;">Python</span>
+        <span style="background:#1a1f35;color:#b5d4f4;font-size:10px;padding:3px 8px;border-radius:4px;">NLTK</span>
+        <span style="background:#1a1f35;color:#b5d4f4;font-size:10px;padding:3px 8px;border-radius:4px;">VADER</span>
+        <span style="background:#1a1f35;color:#9fe1cb;font-size:10px;padding:3px 8px;border-radius:4px;">Hugging Face</span>
+        <span style="background:#1a1f35;color:#9fe1cb;font-size:10px;padding:3px 8px;border-radius:4px;">RoBERTa</span>
+        <span style="background:#1a1f35;color:#fac775;font-size:10px;padding:3px 8px;border-radius:4px;">Transformers</span>
+        <span style="background:#1a1f35;color:#fac775;font-size:10px;padding:3px 8px;border-radius:4px;">Seaborn</span>
+        <span style="background:#1a1f35;color:#b5d4f4;font-size:10px;padding:3px 8px;border-radius:4px;">Pandas</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div style="position:absolute;bottom:10px;right:20px;color:#444;font-size:10px;">Built by Eman Elgamal</div>
+</div>
